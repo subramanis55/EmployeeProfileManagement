@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7A07157-D660-45CD-AD71-9554F6113106}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EcommerceManagement</RootNamespace>
+    <AssemblyName>EcommerceManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEmployeePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddEmployeePage.Designer.cs">
+      <DependentUpon>AddEmployeePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlertBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlertBox.Designer.cs">
+      <DependentUpon>AlertBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CustomTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\CustomTextBox.Designer.cs">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmationForm.Designer.cs">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CustomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CustomTextBoxPlaceholder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\EllipseButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EllipseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeeViewPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeViewPage.Designer.cs">
+      <DependentUpon>EmployeeViewPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\Form1.cs">
+      <SubType>Form</SubType>
+      <Link>Form1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <Link>Form1.Designer.cs</Link>
+    </Compile>
+    <Compile Include="Login\ForgetPasswordPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\ForgetPasswordPage.Designer.cs">
+      <DependentUpon>ForgetPasswordPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\SignUpPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login\SignUpPage.Designer.cs">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleEmployeePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimpleEmployeePanel.Designer.cs">
+      <DependentUpon>SimpleEmployeePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEmployeePage.resx">
+      <DependentUpon>AddEmployeePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlertBox.resx">
+      <DependentUpon>AlertBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\CustomTextBox.resx">
+      <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmationForm.resx">
+      <DependentUpon>ConfirmationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeViewPage.resx">
+      <DependentUpon>EmployeeViewPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <Link>Form1.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\ForgetPasswordPage.resx">
+      <DependentUpon>ForgetPasswordPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\SignUpPage.resx">
+      <DependentUpon>SignUpPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SimpleEmployeePanel.resx">
+      <DependentUpon>SimpleEmployeePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %2824%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7500537.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %2826%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-contacts-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cctv-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-setting-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-products-90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kDqO6kPb3xLj.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuccessIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarningIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fa7716f93e1a40894d4ea2ab704842d1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %286%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2176478.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ErrorCloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TickAnimationIcon.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
